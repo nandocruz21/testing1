@@ -1,0 +1,410 @@
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #c0bfbf;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 8px 10px #382929;
+  margin: 0 9px;
+  margin-top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/* kotak flex di bawah */
+.fixed-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #323368;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Pengaturan Menu Navigasi */
+.tombol {
+  padding: px;
+  margin: 5px;
+}
+
+main.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 3px 16px 8px rgb(78, 77, 77);
+}
+.container h1{
+  text-align: center;
+}
+
+nav ul a {
+  list-style-type: none;
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 9px;
+  font-size: 15px;
+  box-shadow: 0 6px 10px #382929;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #373a47;
+  border-bottom: rgb(245, 245, 232) 4px solid;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* di home kata sambutan */
+p.c1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1em;
+  background-color: #504b4b;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 6px 5px #382929;
+  margin: 20px;
+}
+
+/* Pengaturan umum untuk gambar dan video */
+img,
+video {
+  margin: 0;
+  width:500px;
+  height:500px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+/* Pengaturan audio */
+audio {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* table */
+table {
+  width: 100%; 
+  max-width: 800px; 
+  border-collapse: collapse; 
+  padding: 0; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table tr td a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px;
+  text-align: left;
+}
+
+table tr td a:hover {
+  color: #ad8888;
+}
+
+/* === PENGATURAN HALAMAN KONTAK === */
+.kontak-info {
+  font-size: 1.1em;
+}
+.kontak-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.kontak-info a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* kotak wa */
+.fixed-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 0;
+  margin-top: auto;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+footer a {
+  color: rgb(254, 254, 255);
+  text-decoration: none;
+}
+
+footer a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* === PENGATURAN RESPONSIVE === */
+/* Gunakan ini untuk layar tablet dan di bawahnya */
+@media (max-width: 1024px) {
+  /* --- Header & Navigasi --- */
+  header {
+    flex-direction: unset;
+    padding: 20px;
+    margin: 0;
+  }
+
+  body {
+    margin-top: 20px;
+    margin: 20px;
+    left: 0;
+    right: 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    display: inline;
+    margin-left: 40px;
+  }
+
+  .logo h1 {
+    font-size: 2.3em;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 200px;
+    height: 200px;
+    margin-right: 200px;
+  }
+
+  nav {
+    margin-right: 50px;
+  }
+  nav ul {
+    padding-left: 0;
+    margin-right: 10px;
+    margin-left: 40px;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  nav a:hover {
+    border-bottom-width: 2px;
+  }
+
+  /* --- Konten Utama --- */
+  main.container {
+    margin: 20px auto;
+    padding: 30px;
+    margin-top: 260px;
+    left: 40px;
+    right: 30px;  
+  }
+
+  /* --- Sambutan & Teks --- */
+  p.c1 {
+    font-size: 1em;
+    margin: 15px 0;
+    padding: 12px;
+  }
+
+  /* --- Tabel --- */
+  table {
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  th,
+  td {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  table{
+ 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 466px) {
+  header {
+    display: inline;
+    margin: 0px auto;
+    padding: 40px auto;
+  }
+  .logo {
+    margin-left: 2.4cm;
+  }
+
+  .logo h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+    margin-left: 21px;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+  main.container {
+    margin-top: 7.7cm;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo {
+    align-items: center;
+    justify-content: center;
+    margin-left: 6.3rem;
+  }
+  table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* mx lebar 375 */
+@media (max-width: 390px) {
+
+  nav{
+    margin-right: 4px;
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 12px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    margin-top: 40px;
+    margin-right: 2px;
+    margin-left: 0;
+    z-index: 1000;
+  }
+
+  header {
+    display: inline;
+    margin: 0px auto;
+    padding: 40px auto;
+  }
+
+  .logo {
+    margin-left: 1.7cm;
+  }
+
+  .logo h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+
+  main.container {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 7cm;
+  }
+
+  table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  p.c1 {
+    font-size: 0.9em;
+  }
+
+  /* --- Footer --- */
+  footer {
+    font-size: 0.8em;
+  }
+}
